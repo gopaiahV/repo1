@@ -1,0 +1,80 @@
+useradd		: to create a user
+cat /etc/passwd : to see users
+getent passwd
+cat /etc/group : to see groups
+getent group
+usermod -aG bhavani vamsi : to add user to group
+id user : to see id's
+userdel : to delete the user
+
+=================================================
+
+create user by useradd
+visudo
+su - raju
+sudo yum install pkgname -y
+
+==================================================
+
+vim/vi editor we have 3 modes
+
+1. command mode
+2. insert mode
+3. save mode
+
+SAVE MODE:
+
+i	: insert mode
+w	: save
+q	: quit
+!  : forcefully
+
+2. INSERT MODE
+
+i	: to insert data
+I	: begining of line
+A	: end of the line
+O	: create a new line on top
+o	: create a new line on bottom
+
+1. Command mode
+
+yy		: to copy a line
+p		: paste 
+dd		: delette a line
+u		: undo
+/		: to search a word
+:set number : to print line numbers
+
+===============================================
+
+-rw-r--r-- 1 root root 49 Sep 22 04:24 file1
+
+FILE TYPES:
+-	: REGULAR FILE
+b	: blocked file
+c	: character file
+d	: directory
+l	: link file
+
+PERMISSIONS:
+
+rw- 		r--    r--
+USER		Group		Others
+6			4			4
+
+r	: read	: 4
+W	: write	: 2
+x	: exec	: 1
+
+1. numerical :	chmod 765 file1
+2. alpha		: chmod u=rwx,g=rw,o=rx file1
+3. symbolic	: chmod +x file1
+
+chown raham file1
+chgrp raham file1
+chown raham:raham file3
+
+================================================
+
+GREP : GLOBAL REGULAR EXPRESSION PRINT
